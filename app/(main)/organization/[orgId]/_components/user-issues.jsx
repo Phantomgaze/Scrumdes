@@ -19,7 +19,7 @@ export default async function UserIssues({ userId }) {
 
   return (
     <>
-      <h1 className="text-4xl font-bold gradient-title mb-4">My Issues</h1>
+      <h1 className="text-4xl font-bold text-white-300 mb-4">My Issues</h1>
 
       <Tabs defaultValue="assigned" className="w-full">
         <TabsList>

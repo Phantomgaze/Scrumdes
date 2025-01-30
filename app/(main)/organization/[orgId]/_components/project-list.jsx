@@ -26,7 +26,7 @@ export default async function ProjectList({ orgId }) {
       {projects.map((project) => (
         <Card key={project.id}>
           <CardHeader>
-            <CardTitle className="flex justify-between items-center">
+            <CardTitle className="flex justify-between items-center ">
               {project.name}
               <DeleteProject projectId={project.id} />
             </CardTitle>

@@ -10,9 +10,11 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Jira Clone",
+  title: "Scrumedes",
   description: "",
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
@@ -39,9 +41,9 @@ export default function RootLayout({ children }) {
             <Header />
             <main className="min-h-screen">{children}</main>
             <Toaster richColors />
-            <footer className="bg-gray-900 py-12">
-              <div className="container mx-auto px-4 text-center text-gray-200">
-                <p>Made with 💗 by RoadsideCoder</p>
+            <footer className="bg-[#040e10]-400 py-1.5">
+              <div className="container mx-auto px-2 text-center text-gray-100 text-1xl">
+                <p>Made by Phantomgaze@2025</p>
               </div>
             </footer>
           </ThemeProvider>

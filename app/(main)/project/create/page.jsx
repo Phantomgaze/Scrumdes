@@ -71,7 +71,7 @@ export default function CreateProjectPage() {
 
   return (
     <div className="container mx-auto py-10">
-      <h1 className="text-6xl text-center font-bold mb-8 gradient-title">
+      <h1 className="text-6xl text-center font-bold mb-8 text-white-300">
         Create New Project
       </h1>
 
@@ -83,33 +83,33 @@ export default function CreateProjectPage() {
           <Input
             id="name"
             {...register("name")}
-            className="bg-slate-950"
+            className="bg-slate-950 w-10/12 mx-auto"
             placeholder="Project Name"
           />
           {errors.name && (
-            <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+            <p className="text-red-500 text-sm mt-1 w-1/2 mx-auto">{errors.name.message}</p>
           )}
         </div>
         <div>
           <Input
             id="key"
             {...register("key")}
-            className="bg-slate-950"
-            placeholder="Project Key (Ex: RCYT)"
+            className="bg-slate-950 w-10/12 mx-auto"
+            placeholder="Project Key:"
           />
           {errors.key && (
-            <p className="text-red-500 text-sm mt-1">{errors.key.message}</p>
+            <p className="text-red-500 text-sm mt-1 w-1/2 mx-auto">{errors.key.message}</p>
           )}
         </div>
         <div>
           <Textarea
             id="description"
             {...register("description")}
-            className="bg-slate-950 h-28"
+            className="bg-slate-950 h-28 w-10/12 mx-auto"
             placeholder="Project Description"
           />
           {errors.description && (
-            <p className="text-red-500 text-sm mt-1">
+            <p className="text-red-500 text-sm mt-1 w-1/2 mx-auto">
               {errors.description.message}
             </p>
           )}
@@ -121,7 +121,7 @@ export default function CreateProjectPage() {
           type="submit"
           size="lg"
           disabled={loading}
-          className="bg-blue-500 text-white"
+          className="bg-blue-500 text-white w-10/12 mx-auto"
         >
           {loading ? "Creating..." : "Create Project"}
         </Button>
